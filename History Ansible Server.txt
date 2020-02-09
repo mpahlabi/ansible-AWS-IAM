@@ -1,0 +1,95 @@
+    7  ansible all -a "hostname" ec2-user
+    8  ansible all -a "/usr/bin/uptime" -i hosts -u ec2-user
+    9  ansible -i hosts all -a "hostname" -u ec2-user
+   16  ssh ec2-user@34.239.251.66
+   17  vi ~/.ssh/authorized_keys
+   18  exit
+   19  ssh ec2-user@34.239.251.66
+   20  cd ~/.ssh/
+   21  ls
+   22  hostname
+   23  ifconfig
+   24  ls
+   25  ssh-key
+   26  ssh-keygen
+   27  ls
+   28  cat id_rsa.pub
+   29  exit
+   30  ssh ec2-user@34.239.251.66
+   31  ssh ec2-user@35.171.228.124
+   32  ansible -i hosts all -a "hostname" -u ec2-user
+   33  sudo yum install wget
+   40  vim httpd.yml
+   41  sudo pip3 install boto boto3
+   49  vi index.html
+   50  ansible-playbook -i hosts -u ec2-user httpd.yml
+   51  history
+   52  vim httpd.yml
+   53  ansible-playbook -i hosts -u ec2-user httpd.yml
+   54   ansible -i hosts all -a "hostname" -u ec2-user
+   55  ansible-playbook -i hosts -u ec2-user httpd.yml
+   58  vi hosts
+   59  vim httpd.yml
+   60  ansible-playbook -i hosts -u ec2-user httpd.yml
+   61  ls -al
+   62  clear
+   63  pwd
+   64  ls -al
+   65  vi hosts
+   66  cat hosts
+   67  cat httpd.yml
+   68  cp httpd.yml javad.yml
+   69  ls -al
+   70  clear
+   71  vim javad.yml
+   72  ansible-playbook -i hosts -u ec2-user javad.yml
+   73  cat httpd.yml
+   74  vim javad.yml
+   75  java -v
+   76  vim javad.yml
+   77  ansible-playbook -i hosts -u ec2-user javad.yml
+   78  vim javad.yml
+   79  ansible-playbook -i hosts -u ec2-user javad.yml
+   80  vim javad.yml
+   81  ansible-playbook -i hosts -u ec2-user javad.yml
+   82  wq
+   83  vim javad.yml
+   84  ansible-playbook -i hosts -u ec2-user javad.yml
+   85  ssh 35.171.228.124
+   86  vim javad.yml
+   87  ansible-playbook -i hosts -u ec2-user javad.yml
+   88  vim javad.yml
+   89  ansible-playbook -i hosts -u ec2-user javad.yml
+   90  vim javad.yml
+   91  ansible-playbook -i hosts -u ec2-user javad.yml
+   92  vim javad.yml
+   93  ansible-playbook -i hosts -u ec2-user javad.yml
+   94  vim javad.yml
+   95  ansible-playbook -i hosts -u ec2-user javad.yml
+   96  clear
+   97  cat javad.yml
+   98  ansible-playbook -i hosts -u ec2-user javad.yml
+  105  pip3 install awscli --upgrade --user
+  108  aws configure
+  109  aws iam get-user
+  110  aws configure
+  111  aws iam get-user
+  112  clear
+  113  history
+[ec2-user@ip-10-0-0-39 ~]$ aws iam get-user
+-------------------------------------------------------------------------------------------------------------------
+|                                                     GetUser                                                     |
++-----------------------------------------------------------------------------------------------------------------+
+||                                                     User                                                      ||
+|+-----------------------------------------+-----------------------+-------+------------------------+------------+|
+||                   Arn                   |      CreateDate       | Path  |        UserId          | UserName   ||
+|+-----------------------------------------+-----------------------+-------+------------------------+------------+|
+||  arn:aws:iam::010145847991:user/ansible |  2020-02-09T05:47:05Z |  /    |  AIDAQEXF5LK3QSICQZ6V3 |  ansible   ||
+|+-----------------------------------------+-----------------------+-------+------------------------+------------+|
+|||                                                    Tags                                                     |||
+||+-----------------------------------------------+-------------------------------------------------------------+||
+|||                      Key                      |                            Value                            |||
+||+-----------------------------------------------+-------------------------------------------------------------+||
+|||  name                                         |  devops                                                     |||
+||+-----------------------------------------------+-------------------------------------------------------------+||
+[ec2-user@ip-10-0-0-39 ~]$
