@@ -1,0 +1,6 @@
+---
+- name: Install all the common packages
+  hosts: webserver01:webserver02
+  become: "True"
+  roles:
+        - role: commonpackages

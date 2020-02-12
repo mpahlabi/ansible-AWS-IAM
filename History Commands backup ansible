@@ -1,0 +1,341 @@
+    1  clear
+    2  sudo -i
+    3  exit
+    4  ansible
+    5  ansible all -m hostname
+    6  ansible all -a hostname ec2-user
+    7  ansible all -a "hostname" ec2-user
+    8  ansible all -a "/usr/bin/uptime" -i hosts -u ec2-user
+    9  ansible -i hosts all -a "hostname" -u ec2-user
+   10  pwd
+   11  ls
+   12  sudo -i
+   13  ansible -i hosts all -a "hostname" -u ec2-user
+   14  clear
+   15  ls
+   16  ssh ec2-user@34.239.251.66
+   17  vi ~/.ssh/authorized_keys
+   18  exit
+   19  ssh ec2-user@34.239.251.66
+   20  cd ~/.ssh/
+   21  ls
+   22  hostname
+   23  ifconfig
+   24  ls
+   25  ssh-key
+   26  ssh-keygen
+   27  ls
+   28  cat id_rsa.pub
+   29  exit
+   30  ssh ec2-user@34.239.251.66
+   31  ssh ec2-user@35.171.228.124
+   32  ansible -i hosts all -a "hostname" -u ec2-user
+   33  sudo yum install wget
+   34  wget https://drive.google.com/file/d/1FeBLRmQIiBVZTNiwHqUmL5idCJkGlLKm/view?usp=sharing
+   35  ls
+   36  ls -al
+   37  cat 'view?usp=sharing'
+   38  ls
+   39  clear
+   40  vim httpd.yml
+   41  sudo pip3 install boto boto3
+   42  sudo ansible-inventory -i httpd.yml --list
+   43  ansible-playbook -i httpd.yml -u ec2-user httpd.yml
+   44  sudo vim httpd.yml
+   45  ls
+   46  vim httpd.yml
+   47  ansible-playbook -i hosts -u ec2-user httpd.yml
+   48  ls
+   49  vi index.html
+   50  ansible-playbook -i hosts -u ec2-user httpd.yml
+   51  history
+   52  vim httpd.yml
+   53  ansible-playbook -i hosts -u ec2-user httpd.yml
+   54   ansible -i hosts all -a "hostname" -u ec2-user
+   55  ansible-playbook -i hosts -u ec2-user httpd.yml
+   56  vim httpd.yml
+   57  ls
+   58  vi hosts
+   59  vim httpd.yml
+   60  ansible-playbook -i hosts -u ec2-user httpd.yml
+   61  ls -al
+   62  clear
+   63  pwd
+   64  ls -al
+   65  vi hosts
+   66  cat hosts
+   67  cat httpd.yml
+   68  cp httpd.yml javad.yml
+   69  ls -al
+   70  clear
+   71  vim javad.yml
+   72  ansible-playbook -i hosts -u ec2-user javad.yml
+   73  cat httpd.yml
+   74  vim javad.yml
+   75  java -v
+   76  vim javad.yml
+   77  ansible-playbook -i hosts -u ec2-user javad.yml
+   78  vim javad.yml
+   79  ansible-playbook -i hosts -u ec2-user javad.yml
+   80  vim javad.yml
+   81  ansible-playbook -i hosts -u ec2-user javad.yml
+   82  wq
+   83  vim javad.yml
+   84  ansible-playbook -i hosts -u ec2-user javad.yml
+   85  ssh 35.171.228.124
+   86  vim javad.yml
+   87  ansible-playbook -i hosts -u ec2-user javad.yml
+   88  vim javad.yml
+   89  ansible-playbook -i hosts -u ec2-user javad.yml
+   90  vim javad.yml
+   91  ansible-playbook -i hosts -u ec2-user javad.yml
+   92  vim javad.yml
+   93  ansible-playbook -i hosts -u ec2-user javad.yml
+   94  vim javad.yml
+   95  ansible-playbook -i hosts -u ec2-user javad.yml
+   96  clear
+   97  cat javad.yml
+   98  ansible-playbook -i hosts -u ec2-user javad.yml
+   99  yum install awscli
+  100  sudo yum install awscli
+  101  sudo yum install aws-cli
+  102  pip3 install awscli
+  103  pip install awscli
+  104  sudo yum install awscli
+  105  pip3 install awscli --upgrade --user
+  106  awscli
+  107  sudo awscli
+  108  aws configure
+  109  aws iam get-user
+  110  aws configure
+  111  aws iam get-user
+  112  clear
+  113  history
+  114  aws iam get-user
+  115  cleaar
+  116  clearr
+  117  clear
+  118  aws iam get-user
+  119  aws configure
+  120  mkdir ansible
+  121  cd ansible/
+  122  mkdir roles
+  123  ls
+  124  ansible-galaxy init roles/httpd
+  125  ls
+  126  cd roles/
+  127  ls
+  128  cd httpd/
+  129  ls
+  130  cd ..
+  131  tree httpd/
+  132  tree httpd
+  133  yum install tree -y
+  134  sudo yum install tree -y
+  135  yum install tree -y
+  136  tree httpd
+  137  ansible-galaxy init roles/commoninstallation
+  138  tree commoinstallation
+  139  ls
+  140  cd roles/
+  141  ls
+  142  cd ..
+  143  ls
+  144  cd ..
+  145  ls
+  146  cd roles/
+  147  ls
+  148  rm -rf roles/
+  149  ls
+  150  cd ..
+  151  ls
+  152  ansible-galaxy init roles/commonpackages
+  153  ls
+  154  cd roles/
+  155  ls
+  156  tree commonpackages/
+  157  cd ..
+  158  ls
+  159  cd ..
+  160  ls
+  161  vi httpd.yml
+  162  vim javad.yml
+  163  ansible-playbook -i hosts -u ec2-user javad.yml
+  164  vim javad.yml
+  165  ansible-playbook -i hosts -u ec2-user javad.yml
+  166  vim javad.yml
+  167  ansible-playbook -i hosts -u ec2-user javad.yml
+  168  vim javad.yml
+  169  ansible-playbook -i hosts -u ec2-user javad.yml
+  170  vim javad.yml
+  171  ansible-playbook -i hosts -u ec2-user javad.yml
+  172  ls
+  173  cd ansible/
+  174  ls
+  175  cd roles/
+  176  ls
+  177  cd commonpackages/
+  178  ls
+  179  tree
+  180  vim defaults/main.yml
+  181  vim tasks/main.yml
+  182  ls
+  183  rm -rf view\?usp\=sharing
+  184  ls
+  185  cd ansible/
+  186  ls
+  187  cd roles/
+  188  ls
+  189  vim commonpackages/
+  190  ls
+  191  cd commonpackages/
+  192  ls
+  193  ls -al
+  194  cd ..
+  195  ls
+  196  cd ..
+  197  ls
+  198  cd ..
+  199  ls
+  200  cd ansible/
+  201  ls
+  202  ls -al
+  203  cd ansible/
+  204  ls
+  205  ls -al
+  206  cd roles/
+  207  ls
+  208  cd ..
+  209  ls
+  210  pwd
+  211  clear
+  212  vim httpd.aws_ec2.yml
+  213  ls -al
+  214  vim commonpackages.yml
+  215  cd roles
+  216  ls
+  217  cd commonpackages/
+  218  ls
+  219  vi tasks/main.yml
+  220  cd ~/ansible/
+  221  ls
+  222  ansible-playbook -i httpd.aws_ec2.yml --list
+  223  ansible-playbook -i httpd.aws_ec2.yml --list -u ec2-user
+  224  ansible-playbook -i httpd.aws_ec2.yml --list
+  225  ansible-inventory -i httpd.aws_ec2.yml --list
+  226  vim httpd.aws_ec2.yml
+  227  ansible-inventory -i httpd.aws_ec2.yml --list
+  228  vim httpd.aws_ec2.yml
+  229  ansible-inventory -i httpd.aws_ec2.yml --list
+  230  ls
+  231  tree roles/
+  232  vi commonpackages.yml
+  233  ls
+  234  vim roles/commonpackages/tasks/main.yml
+  235  vi commonpackages.yml
+  236  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user --private-key=/awskey.pem commonpackages.yml
+  237  vi commonpackages.yml
+  238  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user --private-key=/awskey.pem commonpackages.yml
+  239  vi commonpackages.yml
+  240  vim roles/commonpackages/tasks/main.yml
+  241  vi commonpackages.yml
+  242  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user --private-key=/awskey.pem commonpackages.yml
+  243  ls
+  244  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user commonpackages.yml
+  245  vi commonpackages.yml
+  246  python3
+  247  sudo pip3 install virtualenv
+  248  mkdir -p ~/ansible-dir
+  249  cd ~/ansible-dir/
+  250  ls
+  251  virtualenv venv
+  252  ls
+  253  source venv/bin/activate
+  254  pip3 botocore
+  255  pip3 install botocore
+  256  ls
+  257  cd ..
+  258  ls
+  259  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user commonpackages.yml
+  260  ls
+  261  pwd
+  262  cd ~/ansible
+  263  ls
+  264  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user commonpackages.yml
+  265  ansible-inventory -i httpd.aws_ec2.yml --list
+  266  cd ..
+  267  ls
+  268  virtualenv venv
+  269  pwd
+  270  cd ~/ansible
+  271  ls
+  272  ansible-inventory -i httpd.aws_ec2.yml --list
+  273  vim httpd.aws_ec2.yml --list
+  274  vim httpd.aws_ec2.yml
+  275  vim httpd.aws_ec2.yml --list
+  276  ansible-inventory -i httpd.aws_ec2.yml --list
+  277  vim httpd.aws_ec2.yml
+  278  ansible-inventory -i httpd.aws_ec2.yml --list
+  279  vim httpd.aws_ec2.yml
+  280  ansible-inventory -i httpd.aws_ec2.yml --list
+  281  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user commonpackages.yml
+  282  vi commonpackages.yml
+  283  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user
+  284  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user commonpackages.yml
+  285  vi commonpackages.yml
+  286  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user commonpackages.yml
+  287  vi commonpackages.yml
+  288  ls
+  289  cd roles/
+  290  ls
+  291  vi commonpackages.yml
+  292  cd ..
+  293  vi commonpackages.yml
+  294  mv commonpackages.yml installpackages.yml
+  295  ls
+  296  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user installpackages.yml
+  297  ls -al
+  298  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user installpackages.yml
+  299  vi installpackages.yml
+  300  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user installpackages.yml
+  301  vi installpackages.yml
+  302  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user installpackages.yml
+  303  vi installpackages.yml
+  304  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user installpackages.yml
+  305  vi installpackages.yml
+  306  vi /home/ec2-user/ansible/roles/commonpackages/tasks/main.yml
+  307  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user installpackages.yml
+  308  vi /home/ec2-user/ansible/roles/commonpackages/tasks/main.yml
+  309  vim /home/ec2-user/ansible/roles/commonpackages/tasks/main.yml
+  310  vi /home/ec2-user/ansible/roles/commonpackages/tasks/main.yml
+  311  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user installpackages.yml
+  312  vi /home/ec2-user/ansible/roles/commonpackages/tasks/main.yml
+  313  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user installpackages.yml
+  314  vi /home/ec2-user/ansible/roles/commonpackages/tasks/main.yml
+  315  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user installpackages.yml
+  316  vi /home/ec2-user/ansible/roles/commonpackages/tasks/main.yml
+  317  celar
+  318  clear
+  319  cat /home/ec2-user/ansible/roles/commonpackages/tasks/main.yml
+  320  cat installpackages.yml
+  321  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user installpackages.yml
+  322  vim installpackages.yml
+  323  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user installpackages.yml
+  324  exit
+  325  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user installpackages.yml
+  326  cd ~/ansible
+  327  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user installpackages.yml
+  328  history
+  329  clear
+  330  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user installpackages.yml
+  331  cd roles/
+  332  ls
+  333  cd commonpackages/
+  334  ls
+  335  cd tasks/
+  336  ls
+  337  vim main.yml
+  338  cd ..
+  339  ansible-playbook -i httpd.aws_ec2.yml -u ec2-user installpackages.yml
+  340  history
+[ec2-user@ip-10-0-0-39 ~]$ history

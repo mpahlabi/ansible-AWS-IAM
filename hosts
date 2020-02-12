@@ -1,0 +1,13 @@
+[all]
+
+35.171.228.124
+34.239.251.66
+
+localhost	ansible_connection=local
+
+[webserver1]
+35.171.228.124
+
+
+[webserver2]
+34.239.251.66

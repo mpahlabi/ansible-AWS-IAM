@@ -1,0 +1,11 @@
+
+---
+- name: Setup httpd Server on EC2 hosts
+  hosts: webserver1:webserver2
+  become: "True"
+  tasks:
+  - name: Install java 1.8 
+    yum:
+      name: java-1.8.0-openjdk-devel
+      state: present
+    

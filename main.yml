@@ -1,0 +1,11 @@
+---
+# tasks file for roles/commonpackages
+- name: install common packages
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items:
+   - tree 
+   - unzip
+   - curl
+   - net-tools
