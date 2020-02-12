@@ -1,0 +1,33 @@
+
+## Install dybnamic inventory role
+
+ansible-galaxy init roles/commonInstallation
+
+## Create yml file with name of role
+commonpackages.yml
+======================
+---
+- name: Install all the common packages
+hosts: all
+become: "true"
+roles:
+ - role: commonInstallation   [ before config this role you have to create role first by issue this command: ansible-galaxy init roles/commonInstallation]
+
+## Configure task Main.yml for to do list
+Main.yml
+========
+#tasks files for roles/commonInstallation
+
+- name: common packages installation
+   - name: Install common packages
+
+	yum:
+	name: "{{ item}}"
+	state: present
+	with_items:
+	- tree
+	- unzip
+	- curl
+	- net-tools
+##
+ansible-playbook -i httpd.aws_ec2.yml -u ec2-user --private-key=/awskey.pem commonpackages.yml
